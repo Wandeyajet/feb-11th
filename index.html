@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript  shege 2.0</title>
+</head>
+<body>
+    
+</body>
+<script> 
+let userName =prompt ("What is your name?");
+let locationType = prompt ("Where do you stay? (Ajah, Surulere, Mushin)" );
+
+if (locationType  ===  "Ajah") {
+console.log (" You are a Boss!");
+for (let i = 0; i < 20; i++){
+   console.log ("Ajah");
+}
+} else if (locationType === "Surulere"){
+    console.log ("It could be worse");
+    for (let i = 0; i < 20; i++){
+   console.log (userName +" "+ "lives in"+ " "+locationType );
+    }
+} else if (locationType === "Mushin"){
+    console.log ("Deepest of trenches");
+    for (let i = 0; i < 20; i++){
+ console.log( userName +" "+ "lives in"+ " "+locationType );
+    }
+}
+else {
+     alert ("Contact the sevice provider");
+}
+
+switch (locationType){
+    case "Ajah":
+        alert ("You are a Boss!"  +" "+ userName);
+        break;
+         case "Surulere":
+        alert ("It could be worse,"  +" "+ userName);
+        break;
+        case "Mushin":
+        alert ("Deepest of trenches, May God be with you!" +" "+ userName);
+        break;
+}
+
+
+
+</script>
+</html>
